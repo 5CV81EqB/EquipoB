@@ -7,5 +7,8 @@ if(!defined("DB_USER")) define("DB_USER", "root");
 if(!defined("PASSWORD")) define("PASSWORD", "");
 //Schema o Base de datos por omisión
 if(!defined("DATABASE")) define("DATABASE", "TallerMecanico");
-ini_set('error_log',"C:/xampp/htdocs/priceshoes/psh_web_reclutamiento/errores/php_errors.log"); 
+
+ini_set('error_log',"C:/xampp/htdocs/upiicsa/proyecto/errores/php_errors.log"); 
+
+ini_set("date.timezone", "America/Mexico_City");
 ?>

@@ -17,11 +17,11 @@ class DATABASE{
     /* Constructor
         Inicia la conexion a la base de datos
     */
-    function __construct($server = SERVER, $user = DB_USER, $password = PASSWORD, $database = DATABASE, $port = DB_PORT, $socket = DB_SOCKET) {
+    function __construct($server = SERVER, $user = DB_USER, $password = PASSWORD, $database = DATABASE, $port = 3306) {
         $this->driver = new mysqli_driver();
         $this->driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
         // Verifica acceso al servidor conexMySQL
-        $this->conexMySQL = new mysqli($server, $user, $password, $database, $port, $socket);
+        $this->conexMySQL = new mysqli($server, $user, $password, $database, $port);
         if ($this->conexMySQL->connect_errno) {
             throw new Exception("Error de conexion: %s\n", $this->conexMySQL->connect_error);
         } //if

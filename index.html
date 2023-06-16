@@ -1,34 +1,117 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-
-    <title>TALLER MECANICO</title>
-    <link rel="stylesheet" href="estilos/index.css">
-
+    <title>Upifix_EquipoB</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-
     <header>
         <div class="container">
-            <p class="logo">PLATAFORMA DE TALLER MECANICO</p>
+            <p class="logo">Upifix</p>
             <nav>
-                <a href="">GERENTE</a>
-                <a href="">ADMINISTRADOR</a>
+                <a href="#upifix">Quienes Somos</a>
+                <a href="#contenido">Te ofrecemos</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#integrantes">integrantes</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                <a id="iniciarsesion" href="./login.php" >iniciar sesion</a>
+                <a id="cerrarsesion" href="./logout.php">Cerrar Sesion</a>
             </nav>
         </div>
     </header>
 
-    <section id="ADMON">
-        <h1>Llevemos a cabo un <br>mejor control</h1>
+    <section id="hero">
+        <h1>Llevemos a cabo un<br>mejor control</h1>
+        <button>Catalogo</button>
+    </section>
+
+    <section id="upifix">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">Upifix</span></h2>
+                <p>Somos UPIFIX el taller mecanico que te brindara el mejor de los servicios</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenido">
+        <div class="container">
+            <h2>Te ofrecemos</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Los mejores mecanicos a tu servicio</h3>
+                    <p>Mecanicos profesionales que te ofreceran soluciones adecuadas a tus necesidades</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Las mejores marcas para tu auto</h3>
+                    <p>Contamos con las mejores marcas para un servicio de alta calidad</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Sistema de facturacion</h3>
+                    <p>Requieres factura? no te preocupes nosotros te la damos</p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✔️ Confiabilidad</li>
+                <li>✔️ Flexibilidad de horarios</li>
+                <li>✔️ Garantia</li>
+                <li>✔️ Entregas rapidas</li>
+                <li>✔️ Solciones a tus problemas</li>
+                <li>✔️ Eficiencia</li>
+            </ul>
+        </div>
+    </section>
+    <section id="integrantes">
+        <div class="container">
+            <h2>Integrantes</h2>
+            <div class="cartas_integrantes">
+                <div class="icarta">
+                    <h3>Avendaño Huerta Erick Daniel</h3>
+                    <p>Coevaluacion 1</p>
+                </div>
+                <div class="icarta">
+                    <h3>Gonzalez Bustamante Guadalupe Selene</h3>
+                    <p>Coevaluacion 1</p>
+                </div>
+                <div class="icarta">
+                    <h3>Rodriguez Jimenez Daniela</h3>
+                    <p>Coevaluacion 1</p>
+                </div>
+                <div class="icarta">
+                    <h3>Sardaneta Rendon Rafael</h3>
+                    <p>Coevaluacion 1</p>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>El mejor servicio al mejor precio</h2>
+        <button>Agenda</button>
     </section>
 
     <footer>
         <div class="container">
-            <CENTER><p>
-    INSTITUTO POLITECNICO NACIONAL <br> UNIDAD PROFESIONAL INTERDISCIPLINARIA
-    DE INGENIERIA Y CIENCIAS SOCIALES Y ADMINISTRATIVAS <br> DISE�O DE PROYECTOS
-    INFORMATICOS <br> PROFESOR: ABEL BUENO MEZA <br> EQUIPO B prueba1s<br>TALLER MECANICO
-            </p></CENTER>
+            <p>&copy; UPIICSA EQB</p>
         </div>
     </footer>
 </body>
