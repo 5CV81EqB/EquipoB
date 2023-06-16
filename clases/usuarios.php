@@ -79,26 +79,15 @@ private function setSession() {
     $_SESSION['usuario_accesos'] = $this->usuario_accesos;
 
     // Establece valores de sesión en navegador
-    setcookie("session_u", $this->usuario_user, COOKIE_TIME, "/", DOMINIO);
-    setcookie("session_p", $this->usuario_password, COOKIE_TIME, "/", DOMINIO);
-    setcookie("session_remember", 'true', COOKIE_TIME, "/", DOMINIO);
 }
 
-private function destroyCookieSession() {
-    setcookie("session_u", '', -(COOKIE_TIME), "/", DOMINIO, true, true);
-    setcookie("session_p", '', -(COOKIE_TIME), "/", DOMINIO, true, true);
-    setcookie("session_remember", '', -(COOKIE_TIME), "/", DOMINIO, true, true);
-    unset($_COOKIE['session_u']);
-    unset($_COOKIE['session_p']);
-    unset($_COOKIE['session_remember']);
-}
+
 private function destroySession() {
     session_unset();
     session_destroy();
 }
 public function logout(){
     $this->destroySession();
-    $this->destroyCookieSession();
 } 
 
 }

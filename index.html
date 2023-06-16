@@ -3,28 +3,32 @@
 <head>
     <title>Upifix_EquipoB</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <p class="logo">Upifix</p>
             <nav>
-                <a href="#upifix">Quienes Somos</a>
-                <a href="#contenido">Te ofrecemos</a>
-                <a href="#caracteristicas">Características</a>
-                <a href="#integrantes">integrantes</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown
-                      <i class="fa fa-caret-down"></i>
-                    </button>
+            <ul>
+                <li><a href="#upifix">Quienes Somos</a></li>
+                <li><a href="#contenido">Te ofrecemos</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#integrantes">integrantes</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Servicios</a>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                      <a href="#">Iniciar Servicio</a>
+                      <a href="#">Notas</a>
+                      <a href="#">Factura</a>
+                      <a href="#">Administrar</a>
                     </div>
-                  </div>
-                <a id="iniciarsesion" href="./login.php" >iniciar sesion</a>
-                <a id="cerrarsesion" href="./logout.php">Cerrar Sesion</a>
+                  </li>
+                  <li id="iniciarsesion"><a href="./login.php" >iniciar sesion</a></li>
+                  <li id="cerrarsesion"><a href="./logout.php">Cerrar Sesion</a></li>
+            </ul>
+   
             </nav>
         </div>
     </header>
