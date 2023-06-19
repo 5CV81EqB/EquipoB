@@ -7,6 +7,7 @@ if(!defined("DB_USER")) define("DB_USER", !empty($db_user) ? $db_user : 'root');
 //Contraseña de acceso
 $db_pw = ini_get('mysqli.default_pw');
 if(!defined("PASSWORD")) define("PASSWORD", !empty($db_pw) ? $db_pw : NULL);
+if(!defined("DATABASE")) define("DATABASE", "eqb");
 
 
 class DATABASE{
@@ -58,7 +59,6 @@ class DATABASE{
     */
     public function query($sql) {
         $this->sql = trim($sql);
-        if($this->debug) trigger_error($this->sql);
         $this->results = $this->conexMySQL->query($this->sql);
         if($this->conexMySQL->error) {
             trigger_error($this->error());

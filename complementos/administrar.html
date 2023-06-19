@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/cliente.js"></script>
+
+    </head>
+<body>
+<div class="admincontent">
+    <H1>Administracion</H1>
+    <div class="formulario">
+        <h2>¿Qué desea administrar?</h2>
+        <select name="" id="opcionadministrar">
+            <option value="0" selected="true" disabled="disabled">Elige una opcion</option>
+            <option value="1">Clientes</option>
+            <option value="2">Autos</option>
+        </select>
+        <Button id="agregar">Agregar Registro</Button>
+    </div>
+    <div class="selectautomovil formulario">
+        <select name="" id="clienteautomovil">
+        </select>
+    </div>
+    <div id="tablaC" class="formulario"></div>
+    <div id="tablaA" class="formulario"></div>
+    <div class="formularioC">
+        <h1 id="agregarC">Agregar clientes</h1>
+        <h1 id="editaroeliminarC">Eliminar o Editar registro</h1>
+        <form id="ClientesForm">
+            <input type="hidden" id="id_cliente" name="id_cliente" value="0"/>
+            <label >Nombre</label>
+            <input id="nombre" name="nombre" type="text" required>
+            <label >Apellido Paterno</label>
+            <input id="app" name="app" type="text" required>
+            <label >Apellido Materno</label>
+            <input id="apm" name="apm" type="text" required>
+            <label >Fecha de nacimiento</label>
+            <input id="fecnac" name="fecnac" type="date" required>
+            <label >Correo</label>
+            <input id="correo" name="correo" type="email" required>
+            <label >Calle</label>
+            <input id="calle" name="calle" type="text" required>
+            <label >Codigo Postal</label>
+            <input id="cp" name="cp" type="text" required>
+            <label >Municipio</label>
+            <input id="munic" name="munic" type="text" >
+            <label >Estado</label>
+            <input id="estado" name="estado" type="text">
+            <button type="button" id="btnCGuardar">Guardar</button>
+            <div id="ediminar">
+                <button type="button" id="btnCeditar">Editar</button>
+                <button type="button" id="btnCeliminar">Eliminar</button>
+            </div>
+        </form>
+    </div>
+    <div class="formularioA">
+        <h1 id="agregarA">Agregar Automovil</h1>
+        <h1 id="editaroeliminarA">Eliminar o Editar registro</h1>
+        <form id="AutosForm">
+            <label >Matricula</label>
+            <input id="matricula" name="matricula" type="text" required>
+            <label >Modelo</label>
+            <input id="modelo" name="modelo" type="text" required>
+            <label >Año</label>
+            <input id="anio" name="anio" type="text" required>
+            <label >Color</label>
+            <input id="color" name="color" type="text" required>
+            <label >Fecha entrada</label>
+            <input id="fecha_entrada" name="fecha_entrada" type="date" required>
+            <button type="button" id="btnAGuardar">Guardar</button>
+            <div id="ediminarA">
+                <button type="button" id="btnAeditar">Editar</button>
+                <button type="button" id="btnAeliminar">Eliminar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

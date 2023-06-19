@@ -324,15 +324,63 @@ nav ul {
   }
 @media (min-width: 850px){
     header{
-        position: fixed;
         width: 100%;
     }
-
+    .admincontent{
+        text-align: center;
+    }
     header .container{
         flex-direction: row;
         justify-content: space-between;
     }
-
+    #ClientesForm{
+        display: grid;
+        width: 30%;
+        margin: 0 auto;
+    }
+    #AutosForm{
+        display: grid;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .formulario{
+        margin: 0 auto;
+        width: 85%;
+        padding-bottom: 25px;
+    }
+    .formulario h1{
+       text-align: center;
+    }
+    .formularioC{
+        margin: 0 auto;
+        width: 85%;
+        padding-bottom: 25px;
+    }
+    .formularioC h1{
+       text-align: center;
+    }
+    .formularioA{
+        margin: 0 auto;
+        width: 85%;
+        padding-bottom: 25px;
+    }
+    .formularioA h1{
+       text-align: center;
+    }
+    .ediminar{
+        margin: 0 auto;
+    }
+    #tablaC{
+        margin: 0 auto;
+        width: 85%;
+    }
+    #tablaA{
+        margin: 0 auto;
+        width: 85%;
+    }
+    button{
+        margin-top: 15px;
+    }
     header nav{
         flex-direction: row;
         padding-bottom: 0;
